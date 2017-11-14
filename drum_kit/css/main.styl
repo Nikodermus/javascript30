@@ -1,0 +1,51 @@
+/*!
+	Nicolas M. Pardo
+	30 Days of Javascript
+	Day 01: Drum Kit
+*/
+
+
+@import 'nib'
+global-reset()
+*
+	transition all 0.07s ease
+html
+	height 100%
+	
+body
+	background url(../resources/bg.jpg)
+	background-size cover
+	background-repeat no-repeat
+	display flex
+	justify-content center
+	align-items center
+	text-transform uppercase
+	height 100%
+	color white
+.keys
+	width 100%
+	padding 2rem
+	display flex
+	align-items stretch
+	justify-content space-between
+	.key
+		width 60px
+		height 60px
+		border-radius 4px
+		text-align center
+		border 2px solid darkgray
+		background alpha(black, 0.5)
+		kbd 
+			font-family serif
+			font-size 2rem
+			font-weight 600
+			display block
+			padding-top .25rem
+		span 
+			font-size 0.6rem
+			font-family sans-serif
+		&.play
+			border 2px solid white
+			box-shadow 0 0 10px white
+			transform scale(1.2)
+
