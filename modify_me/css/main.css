@@ -1,0 +1,173 @@
+/*
+	Nicolas M. Pardo
+	30 Days of Javascript
+	Day 00: ######
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-family: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+body {
+	line-height: 1;
+	color: #000;
+	background: #fff;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+	vertical-align: middle;
+}
+
+caption,
+th,
+td {
+	text-align: left;
+	font-weight: normal;
+	vertical-align: middle;
+}
+
+a img {
+	border: none;
+}
+
+*,
+*::after,
+*::before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-o-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-transform: 0.5 all ease;
+	-moz-transform: 0.5 all ease;
+	-o-transform: 0.5 all ease;
+	-ms-transform: 0.5 all ease;
+	transform: 0.5 all ease;
+}
+
+
+/* CSS Variables */
+
+:root {
+	--base: #b02626;
+	--spacing: 10px;
+	--blur: 0px;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	background: #303030;
+	color: white;
+	font-family: sans-serif;
+	text-align: center;
+}
+
+h1 {
+	font-size: 1.5rem;
+	padding: 1rem;
+}
+
+h2 {
+	font-size: 1.2rem;
+}
+
+img {
+	object-fit: contain;
+	max-width: 100%;
+	width: 50%;
+	margin: auto;
+	filter: blur(var(--blur));
+	padding: var(--spacing);
+	background: var(--base);
+}
+
+.controls {
+	margin: auto;
+	padding: 2rem;
+	padding-top: var(--spacing);
+	padding-bottom: var(--spacing);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	max-width: 70%;
+}
+
+.highlight {
+	color: var(--base);
+}
