@@ -1,7 +1,6 @@
 /*!
 	Nicolas M. Pardo
 	30 Days of Javascript
-	Day 00: ######
 */
 
 
@@ -13,7 +12,11 @@ global-reset()
 *::before 
 	box-sizing border-box
 	transform translateZ(0)
-	transform 0.5 all ease
+	transition  0.5 all ease
+	&:hover
+	&:active
+	&:focus
+		transition  0.5 all ease
 html
 body
 	height 100%

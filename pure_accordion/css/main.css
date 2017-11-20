@@ -1,0 +1,233 @@
+/*
+	Nicolas M. Pardo
+	30 Days of Javascript
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+  color: #000;
+  background: #fff;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+a img {
+  border: none;
+}
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  -ms-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+*:hover,
+*::after:hover,
+*::before:hover {
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  -ms-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+img {
+  object-fit: contain;
+  max-width: 100%;
+}
+.panels {
+  height: 100vh;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: distribute;
+  -moz-box-pack: distribute;
+  -o-box-pack: distribute;
+  -ms-flex-pack: distribute;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.panels .panel {
+  background: #800080;
+  width: 20%;
+  height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  background-align: center center;
+  color: #fff;
+  filter: saturate(0);
+}
+.panels .panel.panel1 {
+  background-image: url("../resources/bg-1.jpg");
+}
+.panels .panel.panel2 {
+  background-image: url("../resources/bg-2.jpg");
+}
+.panels .panel.panel3 {
+  background-image: url("../resources/bg-3.jpg");
+}
+.panels .panel.panel4 {
+  background-image: url("../resources/bg-4.jpg");
+}
+.panels .panel.panel5 {
+  background-image: url("../resources/bg-5.jpg");
+}
+.panels .panel p {
+  height: 20%;
+  color: #fff;
+  white-space: nowrap;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-transform: translateY(50%);
+  -moz-transform: translateY(50%);
+  -o-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  transform: translateY(50%);
+  text-shadow: 0px 2px 3px rgba(0,0,0,0.9);
+}
+.panels .panel p:first-child {
+  -webkit-transform: translateY(-200%);
+  -moz-transform: translateY(-200%);
+  -o-transform: translateY(-200%);
+  -ms-transform: translateY(-200%);
+  transform: translateY(-200%);
+}
+.panels .panel p:last-child {
+  -webkit-transform: translateY(200%);
+  -moz-transform: translateY(200%);
+  -o-transform: translateY(200%);
+  -ms-transform: translateY(200%);
+  transform: translateY(200%);
+}
+.panels .panel p:nth-child(2) {
+  font-size: 1.5rem;
+  font-weight: 800;
+  height: 60%;
+}
+.panels:hover .panel {
+  width: 10%;
+}
+.panels:hover .panel:hover {
+  width: 60%;
+  filter: saturate(1);
+}
+.panels:hover .panel:hover p:first-child,
+.panels:hover .panel:hover p:last-child {
+  -webkit-transform: translateY(50%);
+  -moz-transform: translateY(50%);
+  -o-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  transform: translateY(50%);
+}
+.panels:hover .panel:hover p:nth-child(2) {
+  font-size: 2rem;
+}
