@@ -1,0 +1,196 @@
+/*
+	Nicolas M. Pardo
+	30 Days of Javascript
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+  color: #000;
+  background: #fff;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+a img {
+  border: none;
+}
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transition: 0.5 all ease;
+  -moz-transition: 0.5 all ease;
+  -o-transition: 0.5 all ease;
+  -ms-transition: 0.5 all ease;
+  transition: 0.5 all ease;
+}
+*:hover,
+*::after:hover,
+*::before:hover {
+  -webkit-transition: 0.5 all ease;
+  -moz-transition: 0.5 all ease;
+  -o-transition: 0.5 all ease;
+  -ms-transition: 0.5 all ease;
+  transition: 0.5 all ease;
+}
+*:active,
+*::after:active,
+*::before:active {
+  -webkit-transition: 0.5 all ease;
+  -moz-transition: 0.5 all ease;
+  -o-transition: 0.5 all ease;
+  -ms-transition: 0.5 all ease;
+  transition: 0.5 all ease;
+}
+*:focus,
+*::after:focus,
+*::before:focus {
+  -webkit-transition: 0.5 all ease;
+  -moz-transition: 0.5 all ease;
+  -o-transition: 0.5 all ease;
+  -ms-transition: 0.5 all ease;
+  transition: 0.5 all ease;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+img {
+  object-fit: contain;
+  max-width: 100%;
+}
+html {
+  background: #bd123a;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+body {
+  max-width: 400px;
+  margin: auto;
+  background: #fff;
+  height: auto;
+  padding: 2rem;
+}
+.item {
+  padding: 0.85rem;
+  border-bottom: 1px solid #ccc;
+}
+.item input,
+.item p {
+  display: inline-block;
+}
+.item input:checked + p {
+  text-decoration: line-through;
+}
+.item:last-of-type {
+  border-bottom: 0;
+}
+.item:hover {
+  background: #dfdfdf;
+}
