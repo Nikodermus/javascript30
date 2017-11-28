@@ -1,0 +1,133 @@
+/*!
+	Nicolas M. Pardo
+	30 Days of Javascript
+*/
+
+
+@import 'nib'
+global-reset()
+
+*
+*::after
+*::before
+	box-sizing border-box
+	transition all ease 0.3s
+	outline none
+	&:hover
+		transition all ease 0.3s
+		outline none
+	&:active
+		transition all ease 0.3s
+		outline none
+	&:focus
+		transition all ease 0.3s
+		outline none
+html
+body
+	height 100%
+	width 100%
+	font-family sans-serif
+	overflow-x hidden
+	max-width 100vw
+body
+	background transparent
+html
+	background black
+img
+	object-fit contain
+	max-width 100%
+button
+	background transparent
+	border 0
+	color white
+	text-shadow 0 0 2px alpha(black, 0.8)
+	white-space nowrap
+	&:hover
+		cursor pointer
+input
+	color white
+	cursor pointer
+.bg
+	absolute bottom 0 left 0
+	width 100%
+	height 100%
+	background url(../resources/bg.jpg)
+	background-attachment fixed
+	background-size cover
+	background-position center center
+	z-index -1
+	filter blur(3px)
+	opacity .7
+.player
+	width 70%
+	background transparent
+	height auto
+	overflow hidden
+	fixed top 50% left 50%
+	transform translate(-50%, -50%)
+	margin auto
+	box-shadow 0 0 20px alpha(white, 0.8)
+	&::before
+		content ''
+		display block
+		padding-bottom 56.25%
+	&:hover
+		.controls
+			transform translateY(0)
+			.progress_container
+				height 10px
+	video
+		width 100%
+		absolute top 0 left 0
+	.toggle
+		flex 0 0 7%
+	.controls
+		absolute bottom 0 left 0
+		width 100%
+		transform translateY(100%)
+	.progress_container
+		height 5px
+		width 100%
+		absolute top 0 left 0
+		background alpha(white, .6)
+		transform translateY(-100%)
+		overflow hidden
+		cursor grab
+		.progress_filled
+			height 100%
+			absolute top 0 left 0
+			background white
+			width 0%
+			transition all linear 0s
+	.player-controls
+		padding  .25rem .45rem
+		background alpha(white, 0.25)
+		width 100%
+		display flex
+		flex-direction row
+		justify-content space-around
+		border-top 1px solid alpha(white,.5)
+		align-items center
+		.progress
+			flex 0 0 50%
+			display none
+		.vertical
+			position relative
+			button.speed
+				font-size 1.2rem
+				line-height 0
+			.vertical_slider
+				absolute bottom 25px left 50%
+				transform-origin bottom left
+				transform rotate(-90deg) translate(0, 50%)
+				overflow hidden
+				input
+					width 65px
+					transform translateX(-120%)
+					&:hover
+						transform  translateX(0)
+			&:hover
+				input
+					transform translateX(0)
+
+
