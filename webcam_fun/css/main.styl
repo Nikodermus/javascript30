@@ -1,0 +1,86 @@
+/*!
+	Nicolas M. Pardo
+	30 Days of Javascript
+*/
+
+
+@import 'nib'
+global-reset()
+
+*
+*::after
+*::before
+	box-sizing border-box
+	transform translateZ(0)
+	transition  0.5 all ease
+	&:hover
+	&:active
+	&:focus
+		transition  0.5 all ease
+html
+body
+	height 100%
+	width 100%
+	font-family sans-serif
+	max-width 100vw
+html
+	background #b90a01
+body
+	margin 5rem
+	width calc(100% - 15rem)
+	height calc(100% - 10rem)
+img
+	object-fit cover
+	max-width 100%
+.canvas-container
+	absolute bottom left
+	width 100%
+	&:after
+		content ''
+		display block
+		padding-bottom 56.25%
+	.photo
+		width 100%
+		absolute top left
+		height 100%
+		object-fit cover
+		background url(../resources/bg.gif)
+		background-size cover
+		background-attachment fixed
+	button
+		absolute bottom 5% left 50%
+		transform translateX(-50%)
+		font-size 1.2rem
+		background white
+		color #b90a01
+		text-transform uppercase
+		font-weight 700
+		letter-spacing -2px
+		border-radius 5px
+		border 0
+		padding 1rem 2rem
+		z-index 99
+		&:hover
+			background #b90a01
+			color white
+			cursor pointer
+video
+	absolute top right
+	width 30%
+.controls
+	width 70%
+	padding 1rem
+.strip
+	absolute top left 100%
+	height 100%
+	width 5rem
+	.image
+		overflow hidden
+		&:after
+			content ''
+			display block
+			padding-bottom 56.25%
+		img
+			absolute top left
+
+

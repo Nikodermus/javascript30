@@ -28,5 +28,4 @@ window.onload = () => {
 		.join('');
 
 	ul.innerHTML = markup;
-
 };

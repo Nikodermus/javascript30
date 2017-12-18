@@ -1,0 +1,225 @@
+/*
+	Nicolas M. Pardo
+	30 Days of Javascript
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+  color: #000;
+  background: #fff;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+a img {
+  border: none;
+}
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transition: 0.5 all ease;
+  -moz-transition: 0.5 all ease;
+  -o-transition: 0.5 all ease;
+  -ms-transition: 0.5 all ease;
+  transition: 0.5 all ease;
+}
+*:hover,
+*::after:hover,
+*::before:hover,
+*:active,
+*::after:active,
+*::before:active,
+*:focus,
+*::after:focus,
+*::before:focus {
+  -webkit-transition: 0.5 all ease;
+  -moz-transition: 0.5 all ease;
+  -o-transition: 0.5 all ease;
+  -ms-transition: 0.5 all ease;
+  transition: 0.5 all ease;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+  max-width: 100vw;
+}
+html {
+  background: #b90a01;
+}
+body {
+  margin: 5rem;
+  width: calc(100% - 15rem);
+  height: calc(100% - 10rem);
+}
+img {
+  object-fit: cover;
+  max-width: 100%;
+}
+.canvas-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.canvas-container:after {
+  content: '';
+  display: block;
+  padding-bottom: 56.25%;
+}
+.canvas-container .photo {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  object-fit: cover;
+  background: url("../resources/bg.gif");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.canvas-container button {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  font-size: 1.2rem;
+  background: #fff;
+  color: #b90a01;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: -2px;
+  border-radius: 5px;
+  border: 0;
+  padding: 1rem 2rem;
+  z-index: 99;
+}
+.canvas-container button:hover {
+  background: #b90a01;
+  color: #fff;
+  cursor: pointer;
+}
+video {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30%;
+}
+.controls {
+  width: 70%;
+  padding: 1rem;
+}
+.strip {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  height: 100%;
+  width: 5rem;
+}
+.strip .image {
+  overflow: hidden;
+}
+.strip .image:after {
+  content: '';
+  display: block;
+  padding-bottom: 56.25%;
+}
+.strip .image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
